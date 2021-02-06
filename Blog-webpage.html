@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+            body{
+                /* background-color: #ffad40; */
+                background-image: url(https://i.artfile.ru/1920x1200_849237_[www.ArtFile.ru].jpg), url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/440px-Biogradska_suma.jpg);
+            }
+            h1{
+                text-align: center;
+                margin-bottom: auto;
+            }
+            #header{
+                background-color: #a65f00;
+            }
+            a{
+                color:black;
+            }
+            a:hover{
+                background-color: #ffc373;
+            }
+            #content h3{
+                margin-bottom: -10px;
+                padding-left: 10%;
+            }
+            #content{
+                border:5px ridge #35d3a7;
+                width:200px;
+                background-color: #5b4cd8;
+                /* float:left; */
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+            #cat-ava{
+                width: 125px;
+                height: 125px;
+                margin-top: 10px;
+                float:inline-end;
+            }
+            #about-me h2{
+                margin-bottom: 20px;
+            }
+            div{
+                border:dashed;
+            }
+            .post{
+                width:50%;
+                padding-left: 5px;
+                padding-left: 5px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 10px;
+                background-color: #ffad40;
+
+            }
+            #author{
+                color:red;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #time{
+                color:green;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1>Yergeldi's blog</h1>
+        </div>
+        <!-- <div id = "maini"> -->
+        <div id = "content">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href = "#about-me">About me</a></li>
+                <li><a href = "#first-post">How I start programming</a></li>
+                <li><a href = "#second-post">Codeforce-pain</a></li>
+            </ul>
+        </div>
+        <div id = "about-me" class = "post">
+        <h2 >About me</h2>
+            <h4>Author: <span id = "author">Yergeldi</span>. Posted on <span id = "time" >2.02.2021</span></h4>
+            <p>My name is Yergeldi. I like programming and cats. 
+            At the moment I know a few of languages of programming, like: c++, python, java 
+            and I hope in the future I will know more languages of programming. About cats,
+            I like them because they are furth, cute and etc.<br></p>
+            <img id = "cat-ava" src="https://userpic.codeforces.com/1409410/title/fdbac6d49e8f0635.jpg">
+        </div>
+        <!-- <img id = "java-ava" src="        https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Java_logo.svg/87px-Java_logo.svg.png"> -->
+        <!--First post!-->
+        <div id = "first-post" class = "post">
+            <h2>Start programming</h2>
+            <h4>Author: <span id = "author">Yergeldi</span>. Posted on <span id = "time" >2.02.2021</span></h4>
+            <p>Oh my god, it was so long ago. He-he, for me at the first programming was so hard. 
+            I remember, how I used to check everything after writing. For example, I wrote loop
+            and I check it. At the moment, I just wanna to laugh. I started my first programming in 
+            language c++.<br></p>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/300px-ISO_C%2B%2B_Logo.svg.png" width = "100px">
+        </div>
+        <!--Second post!-->
+        <div id = "second-post" class = "post"> 
+            <h2>Meeting codeforces</h2>
+            <h4>Author: <span id = "author">Yergeldi</span>. Posted on <span id = "time" >3.02.2021</span></h4>
+            <p>PAIN. P.A.I.N. When I met I think I will just train myself by participatingm but after
+            my friends were started participate, I was started worry about my rating. My rating is so
+            strange. Going down, going up, and again going down. Eh. It's so hurt me. Very hurt me.
+            </p>
+            <img src = "https://upload.wikimedia.org/wikipedia/en/0/07/Codeforces_logo.png" width = "350px">
+        </div>
+        <h3 style="text-align: right; background-color:white; margin-left:80%;">Made by <span id = "author">Yergeldi</span></h3>
+    </body>
+</html>

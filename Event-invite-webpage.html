@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body{
+                background-color: #FFB273;
+            }
+            .img-food{
+                width:100px;        
+                height:100px;
+            }
+            #header{
+                text-align: center;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            #main{
+                border:dashed;
+                text-align: center;
+                font-family:"Helvetica", sans-serif;
+                font-style: italic;
+                border:5px solid #39E639;
+                background-color:#8243D6;
+            }
+            .important{
+                color: red;
+                text-decoration: underline;
+            }
+            #join-us, #details{
+                color:	#FF7400;
+                text-align:center;
+                border:5px dashed #39E639;
+                width:fit-content;
+                margin:0 auto;
+                font-size: large;
+                background-color:#8243D6;
+                margin-bottom: 10px;
+            }
+            #join-us li{
+                margin-left: -20px;
+            }
+            #content{
+                border:5px ridge #39E639;
+                width:200px;
+                background-color:#8243D6;
+                color:	#39E639;
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #content h3{
+                margin-bottom: -10px;
+                text-align: center;
+            }
+            #content li{
+                margin-left:35px;
+            }
+            #content a{
+                color:#67E667
+            }
+            #newss{
+                width:fit-content;
+                width:25%;
+                position: absolute;
+                top:200px;
+                left:50px;
+            }
+            table , td, th {
+                border:2px solid #39E639;
+            }
+            table{
+                background-color: #8243D6;
+            }
+            .table-w{
+                color:#FF7400;
+                font-weight: bold;
+            }
+            #problem-points{
+                position: absolute;
+                top:300px;
+                left:75%;
+            }
+            #rcvp{
+                width:fit-content;
+                margin:0 auto;
+                background-color: #39E639;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id = "main">You are invited<br>to an exclusive <span class = "important">ACM</span> contest</h1>
+        <div id = "content">
+            <h3>Contents:</h3>
+            <ul>
+                <li><a href="#join-us">Join us</a></li>
+                <li><a href="#details">Details</a></li>
+            </ul>
+        </div>
+        <div id="join-us">
+            <h2>Join us and ...:</h2>
+            <ul>
+                <li>Free doner and cola</li>
+                <li>People like you</li>
+                <li>You can come with friends</li>
+                <li>Contest with a lot of interesting problems</li>
+                <li>And at the end parsing of the contest's problems</li>
+            </ul>
+            <img class = "img-food" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D0%A8%D0%B0%D1%83%D1%80%D0%BC%D0%B0.jpg/548px-%D0%A8%D0%B0%D1%83%D1%80%D0%BC%D0%B0.jpg">
+            <img class = "img-food" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/15-09-26-RalfR-WLC-0098.jpg/451px-15-09-26-RalfR-WLC-0098.jpg">
+        </div>
+        <div id="details">
+            <h2>Details:</h2>
+            <ul>
+                <li>Street: Tole bi 59</li>
+                <li>Time: 11:00 - 19:00</li>
+                <li>Need: student's card and laptop</li>
+                <li>Extra need(not have to): team members maximum 3</li>
+            </ul>
+        </div>
+        <div id = "newss">
+            <table >
+                <thead>
+                    <tr>
+                        <th>
+                            <span class = "table-w">Start</span>
+                        </th>
+                        <th>
+                            <span class = "table-w">Event</span>
+                        </th>
+                        <th>
+                            <span class = "table-w">Description</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class = "table-w">11:00</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Welcome</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Greetings from the organizer and sponsors</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class = "table-w">11:30</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Preparing</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">You can eat or maybe prepare ur laptops and teams</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class = "table-w">12:00</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Starting contest</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Contest will started and u will write for 5 hours. Good luck have fun :D</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class = "table-w">17:00</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Ending contest and rest start</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Contest will finished. You won't able to send any more. And you will go to rest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class = "table-w">17:30</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Starting parsings of problems</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Orginizators will show solve of problems, if u solved, maybe u will found out new ways to solve</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class = "table-w">18:30</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Feast</span>
+                        </td>
+                        <td>
+                            <span class = "table-w">Free doners and coca cola will give all teams. Eat and go to home</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "problem-points">
+            <table>
+                <thead>
+                    <tr>
+                        <th><span class = "table-w">Problem</span></th><th><span class = "table-w">Points</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class = "table-w">A</span></td><td><span class = "table-w">500</span></td></tr>
+                    <tr><td><span class = "table-w">B</span></td><td><span class = "table-w">750</span></td></tr>
+                    <tr><td><span class = "table-w">C</span></td><td><span class = "table-w">1000</span></td></tr>
+                    <tr><td><span class = "table-w">D</span></td><td><span class = "table-w">1250</span></td></tr>
+                    <tr><td><span class = "table-w">E</span></td><td><span class = "table-w">1500</span></td></tr>
+                    <tr><td><span class = "table-w">F</span></td><td><span class = "table-w">2000</span></td></tr>
+                    <tr><td><span class = "table-w">G</span></td><td><span class = "table-w">2500</span></td></tr>
+                    <tr><td><span class = "table-w">H</span></td><td><span class = "table-w">3000</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "rcvp">
+            <form>
+                <fieldset>
+                    <label for="">Will u come ?</label>
+                    <input type = "checkbox">
+                </fieldset>
+            </form>
+        </div>
+</body>
+</html>
