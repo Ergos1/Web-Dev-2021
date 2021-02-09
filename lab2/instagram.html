@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+        <title>Instagram</title>
+        <style>
+            #img-inner{
+                position: absolute;
+                top:100px;
+                left:151px;
+                width: 240px;
+                height:427px;
+            }
+            #img-phones{
+                width:454px;
+                height: 618px;
+            }
+            #img-combine{
+                position: relative;
+                width: fit-content;
+            }
+            #insta{
+                width: 175px;
+                height: 51px;
+                background-image:url("https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png");
+                background-size: 440px 411px;
+                background-position: 0 -129px;
+                margin-top:35px;
+                margin-bottom: 40px;
+                margin-left:25%;
+            }
+            body{
+                font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                color: rgb(38,38,38);
+                font-size: 14px;
+                line-height: 18px;
+            }
+            #inputs input{
+                width:250px;
+                height:20px;
+                background: rgb(250,250,250);
+                border: 1px solid rgb(219,219,219);
+                border-radius: 3px;
+                padding: 9px 0 7px 8px;
+                font-weight: 400;
+                font-size: 12px;
+                font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            }
+            #inputs{
+                margin-left:12.5%;
+            }
+            #inputs div{
+                margin-bottom: 5px;
+            }
+            #inputs #password{
+                margin-bottom: 10px;
+            }
+            #button-login button{
+                color: white;
+                border: none;
+                background-color: #b2dffc;
+                border-radius: 3px;
+                font-weight: bold;
+                font-size: 13.3333px;
+                padding: 6px; 
+                width:262px;
+                height:30px;
+                margin-bottom: 15px;
+            }
+            #line{
+                border-bottom: 1px solid rgb(219,219,219);
+                width:262px;
+                margin-top:10px;
+                margin-bottom: -23px;
+                margin-left: 12.5%;
+            }
+            #or #word{
+                font-size:13px;
+                font-weight: 600;
+                color:rgb(142,142,142);
+                width:50px;
+                text-align: center;
+                margin:13px auto;
+                background-color: white;
+            }
+            #or{
+                margin:0 auto;
+                margin-bottom: 20px;
+            }
+            #interface{
+                border:1px solid rgb(219,219,219);
+                width:348px;
+                height:378px;
+                margin: 0 auto;
+                margin-left:0;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            #button-login-facebook{
+                margin-left: 25%;
+                margin-bottom: 20px;
+            }
+            #button-login-facebook button span{
+                font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                color: #385185;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 500;
+            }
+            #button-login-facebook button{
+                border:none;
+                background-color: white;
+            }
+            #img-face-icon{
+                width:13px;
+            }
+            #forgor-pass{
+                font-size:12px;
+                text-align: center;
+                margin-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #00376b;
+            }
+            #reg-href{
+                color: #0095f6;
+            }
+            #register{
+                width:348px;
+                height: 41px;
+                border:1px solid rgb(219,219,219);
+                padding:20px 0 0 0;
+                text-align: center;
+            }
+            #register span{
+            }
+            #mainer{
+                margin-top: 3%;
+                width:fit-content
+            }
+            #imgs-load-app{
+                margin: 0 auto;
+            }
+            #imgs-load-app img{
+                width:136px;
+                height:40px;
+            }
+            #ios{
+                margin-left: 40px;
+            }
+            .flex{
+                margin-top: 2%;
+                display: flex;
+                justify-content: center;
+            }
+            ul {
+                margin:0;
+                padding: 4px;
+            }
+            ul li, ul li select{
+                display: inline;
+                margin-right: 5px;
+                padding: 3px;
+                font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                color:rgb(150,150,150);
+                font-size: 12px;
+            }
+            select{
+                border: none;
+            }
+            #sec-1{
+                text-align: center;
+            }
+            #sec-2{
+                text-align: center;
+            }
+            #sec-3{
+                text-align: center;
+            }
+            footer{
+                margin-top: 3%;
+            }
+            #email input{
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "flex">
+            <div id = "img-combine">
+                <img id = "img-phones" src="https://www.instagram.com/static/images/homepage/home-phones.png/38825c9d5aa2.png">
+                <img id = "img-inner" src="https://www.instagram.com/static/images/homepage/screenshot1-2x.jpg/9144d6673849.jpg">
+            </div>
+            <div id = "mainer">
+                <div id = "interface">
+                    <div id = "insta"></div>
+                    <div id = "inputs">
+                        <form action="">
+                            <div id = "email">
+                                <input type="text" placeholder="Номер телефона, имя пользователя или эл. адрес">
+                            </div>
+                            <div id = "password">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div id = "button-login">
+                                <button type="submit">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="or">
+                        <div id = "line" class="flex-1"></div>
+                        <p class="flex-1" id = "word">ИЛИ</p>
+                    </div>
+                    <div id = "button-login-facebook">
+                        <button type="button">
+                            <img id = "img-face-icon" src = "https://www.facebook.com/images/fb_icon_325x325.png">
+                            <span><a href="#">Войти через Facebook</a></span>
+                        </button>
+                    </div>
+                    <div id = "forgor-pass">
+                        <a href="google.com">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div id = "register">
+                    <span>У вас ещё нет аккаунта? <a href="#" id = "reg-href">Зарегистрироваться</a></span>
+                </div>
+                <div id = "load-app">
+                    <p style="text-align: center;">Установите приложение.</p>
+                </div>
+                <div id = "imgs-load-app">
+                    <a href="#"><img id="ios" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png"></a>
+                    <a href="#"><img id="andr" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png"></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id = "sec-1">
+                <ul>
+                    <li>Информация</li>
+                    <li>Блог</li>
+                    <li>Вакансии</li>
+                    <li>Помощь</li>
+                    <li>API</li>
+                    <li>Конфедециальность</li>
+                    <li>Условия</li>
+                    <li>Популярные аккаунты</li>
+                    <li>Хэштеги</li>
+                    <li>Места</li>
+                </ul>
+                </div>
+            <div id = "sec-2">
+                <ul>
+                    <li>Красота</li>
+                    <li>Танцы и выступления</li>
+                    <li>Фитнес</li>
+                    <li>Еда и напитки</li>
+                    <li>Дом и сад</li>
+                    <li>Музыка</li>
+                    <li>Изобразительное искусство</li>
+                </ul>
+            </div>
+            <div id="sec-3">
+                <ul>
+                    <li>
+                        <select>
+                            <option>Русский</option>
+                            <option>Yera</option>
+                        </select>    
+                    </li>
+                    <li>© Instagram от Facebook, 2021</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

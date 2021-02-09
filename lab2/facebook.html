@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://www.facebook.com/images/fb_icon_325x325.png">
+        <title>Facebook — Выполните вход или зарегистрируйтесь</title>
+        <style>
+            body{
+                background-color: rgb(240,242,245);
+            }
+            #img-facebook{
+                height:106px;
+            }
+            #facebook-description-1{
+                text-align: left;
+                font-size:24px;
+                line-height: 28px;
+                font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+                font-weight: normal;
+            }
+            #facebook-description-2{
+                margin-top: -50px;
+                margin-left: 30px;
+            }
+            #but-sign button{
+                background-color: #1877f2;
+                border: none;
+                border-radius: 6px;
+                font-size: 20px;
+                line-height: 48px;
+                padding: 0 16px;
+                width: 364px;
+                color:white;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            input{
+                border:1px solid #dddfe2;
+                border-radius: 6px;
+                font-size: 17px;
+                width:330px;
+                padding:14px 16px;
+            }
+            #email input, #password input{
+                margin-top: 10px;
+            }
+            #facebook-interface{
+                background-color: #fff;
+                border-radius: 8px;
+                padding:10px 16px;
+                padding-bottom: 30px;
+                width:364px;
+                box-shadow: 
+                0 2px 4px rgb(0 0 0 / 10%);
+                margin: 40px 0 0;
+
+            }/* 396 - 364 = 32/ 2 = 16*/
+            #facebook-interface-1{
+                text-align: center;
+                /* padding-left: 16px; */
+                margin: 0 auto;
+            }
+            #forgor-pass a{
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: 500;
+                color: #1877f2;
+            }
+            #forgor-pass{
+                margin-top: 16px;
+            }
+            #line{
+                color:#1c1e21;
+                margin:20px 16px;
+                border-bottom:1px solid #dadde1;
+                margin-bottom: 30px;
+            }
+            #create-but a{
+                font-size:17px;
+                font-weight: bold;
+                text-decoration: none;
+                color:white;
+                background-color: #42b72a;
+                padding: 10px 16px;
+                border-radius: 6px;
+                display: inline-block;
+            }
+            #under-inter a{
+                font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                color:#1c1e21;
+            }
+            #under-inter {
+                width:396px;
+                text-align: center;
+            }
+            .container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 100px;
+            }
+            #extra-lang{
+                border: 1px solid;
+                border-radius: 2px;
+                box-sizing: content-box;
+                font-size: 12px;
+                -webkit-font-smoothing: antialiased;
+                justify-content: center;
+                padding: 0 8px;
+                position: relative;
+                text-align: center;
+                text-shadow: none;
+                vertical-align: middle;
+                width:fit-content;
+                font-weight: bold;
+                background-color: rgb(227,227,227);
+            }
+            footer{
+                position: absolute;
+                top:720px;
+                height:fit-content;
+                left:0;
+                width:100%;
+                background-color:rgb(255,255,255);
+                padding-top: 20px;
+            }
+            footer li{
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                color: #8a8d91;
+            }
+            ul {
+                margin:0;
+                padding: 4px;
+            }
+            ul li{
+                display: inline;
+                margin-right: 5px;
+                padding: 3px;
+            }
+            #footer-ul{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            #footer-line{
+                border-bottom: 1px solid #dddfe2;
+                font-size: 1px;
+                height: 8px;
+                margin-bottom: 8px;
+            }
+            #end-end{
+                font-size: 11px;
+                color:#737373;
+                margin-left: 20%;
+                padding-left: 5px;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container"> 
+        <div id = "facebook-description-1">
+            <img id = "img-facebook" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+            <div id = "facebook-description-2">
+                <p>Facebook помогает вам всегда<br> оставаться на связи и общаться со<br> своими знакомыми.</p>
+            </div>
+        </div>
+        <div id = "mainer">
+            <div id = "facebook-interface">
+                <form action="">
+                    <div id = "facebook-interface-1">
+                        <div id = "email">
+                            <input type="text" placeholder="Электронный адрес или номер телефона">
+                        </div>
+                        <div id = "password">
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                        <div id = "but-sign">
+                            <button type="submit">Вход</button>
+                        </div>
+                        <div id = "forgor-pass">
+                            <a href="google.com">Забыли пароль?</a>
+                        </div>
+                        <div id = "line"></div>
+                        <div id = "create-but">
+                            <a role = "button" href = "google.com">Создать аккаунт</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id = "under-inter">
+                <p><a href="https://google.com" target="_blank" class="_8esh">Создать Страницу</a>
+                знаменитости, музыкальной группы или компании.</p>
+            </div>
+        </div>  
+        <footer>
+            <div id = "footer-ul">
+                <ul>
+                    <li>Русский</li>
+                    <li>English (US)</li>
+                    <li>Türkçe</li>
+                    <li>Bahasa Indonesia</li>
+                    <li>Қазақша</li>
+                    <li>中文(简体)</li>
+                    <li>Deutsch</li>
+                    <li>한국어</li>
+                    <li>Shqip</li>
+                    <li>Español</li>
+                    <li>Português (Brasil)</li>
+                    <li id = "extra-lang"><a role="button">+</a></li>
+                </ul>
+                <div id = "footer-line"></div>
+                <ul>
+                    <li>Регистрация</li>
+                    <li>Вход</li>
+                    <li>Messanger</li>
+                    <li>Facebook Lite</li>
+                    <li>Watch</li>
+                    <li>Люди</li>
+                    <li>Страницы</li>
+                    <li>Категории старниц</li>
+                    <li>Места</li>
+                    <li>Игры</li>
+                    <li>Marketplace</li>
+                    <li>Facebook Play</li>
+                    <li>Группы</li>
+                    <li>Вакансии</li>
+                    <li>Oculus</li>
+                    <li>Portal</li>
+                    <li>Instagram</li>
+                    <li>Местные</li>
+                    <li>Благотворительные акции</li>
+                    <li>Услуги</li>
+                    <li>Центр информации о голосовании</li>
+                    <li>О нас</li>
+                    <li>Создать рекламу</li>
+                    <li>Создать Страницу</li>
+                    <li>Разроботчикам</li>
+                    <li>Вакансии</li>
+                    <li>Конфедециальность</li>
+                    <li>Файлы cookie</li>
+                    <li>Выбор рекламы</li>
+                    <li>Услуги использвания</li>
+                    <li>Справка</li>
+                </ul>
+            </div>
+            <p id = "end-end">Facebook © 2021</p>
+        </footer>
+        <div>
+    </body>
+</html>

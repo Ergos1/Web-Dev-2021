@@ -4,20 +4,32 @@
         <meta charset="utf-8">
         <title>Project: Travel webpage</title>
         <style>
+            body{
+                background-color: gray;
+            }
             h1{
                 text-align:center;
                 line-height:1px;
                 color:rgb(37, 109, 112);
             }
+            #main{
+                margin-top: 70px;
+            }
             #head{
                 background-color:rgb(225, 255, 0);
+                position: fixed;
+                width: 100%;
+                top:0px;
+                border:3px solid black;
+                border-radius: 5px;
+                opacity: 50%;
             }
             #contents{
                 width:150px;
                 height:100px;
                 line-height:20px;
                 padding-left:5px;
-                background-color:gray;
+                background-color:white;
                 border:2px solid;
                 float:left;
                 margin-right:10px;
@@ -65,39 +77,38 @@
     </head>
     <body>
         <div id = "head">
-            <hr>
             <h1>Travel to New York</h1>
+        </div>
+        <div id = "main">
+            <div id = "contents">
+                <h2 >Contents:</h2>
+                <ol>
+                    <li><a href = "#description">Description</a></li>
+                    <li>
+                    <a href = "#travels" >My travels</a></li>
+                        <ol id = "sub-content">
+                            <li><a href = "#img-stat-lib">The Statue of Liberty</a></li>
+                            <li><a href = "#img-times-square"> Times Square</a></li>
+                        </ol>    
+                    <li><a href = "#references">References</a></li>
+                </ol>
+            </div>
+            <h2 id = "description">Description</h2>
             <hr>
+            <p id = "description"><strong>New York City (NYC)</strong>, often called simply New York, is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the State of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. New York City has been described as the cultural, financial, and media capital of the world, significantly influencing commerce, entertainment, research, technology, education, politics, tourism, art, fashion, and sports. Home to the headquarters of the United Nations, New York is an important center for international diplomacy [<a href = "https://en.wikipedia.org/wiki/New_York_City">More</a>].
+            </p>
+            <h2 id = "travels">My travels</h2>
+            <hr>
+            <h3>The Statue of Liberty</h3>
+            <img id = "img-stat-lib" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Lady_Liberty_under_a_blue_sky_%28cropped%29_%28cropped%29.jpg/162px-Lady_Liberty_under_a_blue_sky_%28cropped%29_%28cropped%29.jpg">
+            <p id ="about-stat-lib"><strong>The Statue of Liberty</strong> (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886. P.s: It's really big statue[<a href = "https://en.wikipedia.org/wiki/Statue_of_Liberty">More</a>]. </p>
+            <h3>Times Square</h3>
+            <img id = "img-times-square" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/366px-New_york_times_square-terabass.jpg">
+            <p id = "about-times-square"><strong>Times Square</strong> is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City, at the junction of Broadway and Seventh Avenue. Brightly lit by numerous billboards and advertisements, it stretches from West 42nd to West 47th Streets, and is sometimes referred to as "the Crossroads of the World", "the Center of the Universe", "the heart of the Great White Way", and "the heart of the world". One of the world's busiest pedestrian areas, it is also the hub of the Broadway Theater District and a major center of the world's entertainment industry. Times Square is one of the world's most visited tourist attractions, drawing an estimated 50 million visitors annually. Approximately 330,000 people pass through Times Square daily, many of them tourists, while over 460,000 pedestrians walk through Times Square on its busiest days[<a href = "https://en.wikipedia.org/wiki/Times_Square">More</a>].</p>
+            <h2 id = "references">References</h2>
+            <hr>
+            <p>All information from <a href = "https://en.wikipedia.org/wiki/Times_Square#External_links"> wikipedia</a>.</p>
+            <p id ="autor">Made by Yergeldi</p>
         </div>
-        <div id = "contents">
-        <h2 >Contents:</h2>
-        <ol>
-            <li><a href = "#description">Description</a></li>
-            <li>
-            <a href = "#travels" >My travels</a></li>
-                <ol id = "sub-content">
-                    <li><a href = "#img-stat-lib">The Statue of Liberty</a></li>
-                    <li><a href = "#img-times-square"> Times Square</a></li>
-                </ol>    
-            <li><a href = "#references">References</a></li>
-        </ol>
-        
-        </div>
-        <h2 id = "description">Description</h2>
-        <hr>
-        <p id = "description"><strong>New York City (NYC)</strong>, often called simply New York, is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the State of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. New York City has been described as the cultural, financial, and media capital of the world, significantly influencing commerce, entertainment, research, technology, education, politics, tourism, art, fashion, and sports. Home to the headquarters of the United Nations, New York is an important center for international diplomacy [<a href = "https://en.wikipedia.org/wiki/New_York_City">More</a>].
-        </p>
-        <h2 id = "travels">My travels</h2>
-        <hr>
-        <h3>The Statue of Liberty</h3>
-        <img id = "img-stat-lib" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Lady_Liberty_under_a_blue_sky_%28cropped%29_%28cropped%29.jpg/162px-Lady_Liberty_under_a_blue_sky_%28cropped%29_%28cropped%29.jpg">
-        <p id ="about-stat-lib"><strong>The Statue of Liberty</strong> (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886. P.s: It's really big statue[<a href = "https://en.wikipedia.org/wiki/Statue_of_Liberty">More</a>]. </p>
-        <h3>Times Square</h3>
-        <img id = "img-times-square" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/366px-New_york_times_square-terabass.jpg">
-        <p id = "about-times-square"><strong>Times Square</strong> is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City, at the junction of Broadway and Seventh Avenue. Brightly lit by numerous billboards and advertisements, it stretches from West 42nd to West 47th Streets, and is sometimes referred to as "the Crossroads of the World", "the Center of the Universe", "the heart of the Great White Way", and "the heart of the world". One of the world's busiest pedestrian areas, it is also the hub of the Broadway Theater District and a major center of the world's entertainment industry. Times Square is one of the world's most visited tourist attractions, drawing an estimated 50 million visitors annually. Approximately 330,000 people pass through Times Square daily, many of them tourists, while over 460,000 pedestrians walk through Times Square on its busiest days[<a href = "https://en.wikipedia.org/wiki/Times_Square">More</a>].</p>
-        <h2 id = "references">References</h2>
-        <hr>
-        <p>All information from <a href = "https://en.wikipedia.org/wiki/Times_Square#External_links"> wikipedia</a>.</p>
-        <p id ="autor">Made by Yergeldi</p>
     </body>
 </html>
