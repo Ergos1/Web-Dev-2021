@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <style>
+            .square{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            }
+            .hero{
+                background-color: red;
+                top:10px;
+                left:10px;
+            }
+            .enemy{
+                background-color: blue;
+                top:150px;
+                left:150px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class = "square hero"></div>
+        <div class = "square enemy"></div>
+        <script>
+            function getValue(item){
+                let value = "0";
+                for(let i = 0; i < item.length; i++){
+                    if(item[i] >= "0" && item[i] <= "9"){
+                        value+=item[i];
+                    }
+                }
+                return Number(value);
+            }
+            // function getColl(a, b){
+            //     if(a.style.top)
+            // }
+            document.addEventListener("keydown", function(){
+                let sq = document.querySelector(".hero");
+                let en = document.querySelector(".enemy");
+                if(event.key == "a"){
+                    sq.style.left = (getValue(sq.style.left) - 10) + 'px';
+                }
+                else if(event.key == "d"){
+                    sq.style.left = (getValue(sq.style.left) + 10) + 'px';
+                }
+                if(event.key == "w"){
+                    sq.style.top = (getValue(sq.style.top) - 10) + 'px';
+                }
+                else if(event.key == "s"){
+                    sq.style.top = (getValue(sq.style.top) + 10) + 'px';
+                }
+            });
+        </script> -->
+        <script>
+            let x = 1;
+            function aldi(){
+                let x = (x)||0;
+                console.log("local x: " + x);
+            }
+            aldi();
+            console.log("gloval x: " + x);
+        </script>
+    </body>
+</html>

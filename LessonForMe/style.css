@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: black;
+    color: rgb(119, 119, 119);
+}
+header h4{
+    margin: 5px;
+    margin-left: 40px;
+}
+.adding input{
+    width:400px;
+    padding:5px;
+    border-radius: 4px;
+    border: 1px solid rgb(179, 179, 179);
+    margin-left: 70px;
+}
+.adding{
+    margin-bottom: 30px;
+}
+.main{
+    width:fit-content;
+    margin: 100px auto;
+}
+.word{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.add{
+    padding: 5px 10px 5px 10px;
+    margin-left: 20px;
+    border: 1px solid rgb(51,122,183);
+    background-color: rgb(51,122,183);
+    border-radius: 3px;
+    color:white;
+}
+.trash{
+    width:10px;
+}
+.items{
+    border:1px solid gray;
+    border-radius: 3px;
+    width: 560px;
+}
+.items div button{
+    background-color: white;
+    background: none;
+    border: none;
+}
+.items div button:hover{
+    cursor: pointer;
+}
+.items div input{
+    margin-right: 25px;
+}
+.items div{
+    display: flex;
+}
+.items div{
+    /* border:1px solid gray; */
+    width: 540px;
+    padding:5px 10px 5px 10px;
+    /* border-radius: 3px; */
+}
+p{
+    width:480px;
+    margin: 0;
+    margin-right: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.checked{
+    text-decoration:line-through;
+}
+.invis{
+    display: none;
+}
+.lineEnd{
+    border-bottom:1px solid gray;
+}
