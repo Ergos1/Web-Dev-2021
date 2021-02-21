@@ -27,10 +27,12 @@ function getLast(divs){
     }
     return 0;
 }
-function getDivs(){return document.querySelector(".items").getElementsByTagName("div");}
+function getDivs(){
+    return document.querySelector(".items").getElementsByTagName("div");
+}
 function add(){
     let nameItem0 = document.querySelector("input[name='in-item']").value;
-    if(nameItem0.trim() == "") {document.querySelector("input[name=\"in-item\"").value = "";return;}
+    if(nameItem0.trim() === "") {document.querySelector("input[name=\"in-item\"").value = "";return;}
     let divs = getDivs();
     let nameItem = "";
     let cnt_sym = 0;

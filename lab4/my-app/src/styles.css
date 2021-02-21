@@ -1,0 +1,11 @@
+*{
+  font-family: 'Roboto', Arial, sans-serif;
+  outline: none;
+}
+body{
+  background-color: rgb(194, 194, 194);
+  margin:0;
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+<div class = "main">
+    <div class = "head">
+        <h1>My Store</h1>
+        <button><i class = "material-icons">shopping_cart</i> <h2>Checkout</h2></button>
+    </div>
+    <div class = "adder">
+        <button class="shower-hider" (click) = "showerMethod()" ><p *ngIf="shower">Show</p><p *ngIf="!shower">Hide</p></button>
+        <form class = "inputs" *ngIf = "!shower">
+            <label>Name:<input type="text" [(ngModel)] = "form.name" name = "form.name" ></label>
+            <label>Description: <input type="text" [(ngModel)] = "form.description" name = "form.description" ></label>
+            <label>Rating: <input type="number" [(ngModel)] = "form.rating" name = "form.rating" ></label>
+            <label>Images link-1: <input type="string" [(ngModel)] = "form.images[0]" name = "form.images[0]" ></label>
+            <label>Images link-2: <input type="string" [(ngModel)] = "form.images[1]" name = "form.images[1]" ></label>
+            <label>Images link-3: <input type="string" [(ngModel)] = "form.images[2]" name = "form.images[2]" ></label>
+            <label>Price: <input type="number" [(ngModel)] = "form.price" name = "form.price"></label>
+            <label>Link: <input type="text" [(ngModel)] = "form.link" name = "form.link"></label>
+            <button type="submit" class="but-adder" (click) = "check()">Add item</button>
+            <h3 class = "text">Made by Yergeldi</h3>
+            <img src= "https://i.gifer.com/2GU.gif">
+        </form>
+    </div>
+    <div class = "body">
+        <h2>Products</h2>
+        <div class = "list" *ngFor = "let product of products">
+            <a target="_blank" [title] = "'price: ' + product.price + '$'" [href] = "product.link">{{product.name}}</a>
+            <p>Description: {{product.description}}</p>
+            <div class = "galery">
+                <img [src] ="product.images[product.index_img]">
+                <button class = "material-icons arrow_right" (click) = "rightMove(product)">keyboard_arrow_right</button>
+                <button class = "material-icons arrow_left" (click) = "leftMove(product)">keyboard_arrow_left</button>
+            </div>
+            <div class = "rating">
+                <p>Rating:</p>
+                <div  [title] = "product.rating" *ngFor = "let i of [].constructor(round(product.rating))">
+                    <i class = "material-icons">star_rate</i>
+                </div>
+                <div  [title] = "product.rating" *ngFor = "let i of [].constructor(5 - round(product.rating))">
+                    <i class = "material-icons">star_border</i>
+                </div>
+            </div>
+            <div class="share">
+                <p>Share:</p>
+                <img (click) = "share('https://telegram.me/share/url?url=', product)"title = "Share by telegram" src = "https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo_icon.png">
+                <img (click) = "share('https://wa.me/123456789?text=', product)" title = "Share by whatsapp" src = "https://logos-download.com/wp-content/uploads/2016/03/Whatsapp-ios7.png">
+            </div>
+            <div *ngIf = "!shower" class = "deleter">
+                <button (click) = "del(product)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
