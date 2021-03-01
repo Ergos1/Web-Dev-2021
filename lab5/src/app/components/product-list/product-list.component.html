@@ -1,0 +1,37 @@
+<h2>Products<br>{{category_name}}</h2>
+<div class = "main">
+    <div class = "list" *ngFor = "let product of products">
+        <div class = "image">
+            <img class = "main-img" [src] = "product.images[0]">
+        </div>
+        <div class = "info">
+            <a class = "name">{{product.name}}</a>
+            <hr>
+            <a class = "more" routerLink = "/categories/{{product.categoryId}}/products/{{product.id}}"><strong>More...</strong></a>
+            <div class = "rating">
+                <p><strong>Rating:</strong> </p>
+                <div  [title] = "product.rating" *ngFor = "let i of [].constructor(round(product.rating))">
+                    <i class = "material-icons">star_rate</i>
+                </div>
+                <div  [title] = "product.rating" *ngFor = "let i of [].constructor(5 - round(product.rating))">
+                    <i class = "material-icons">star_border</i>
+                </div>
+            </div>
+            <p><strong>Price:</strong> {{product.price}} $</p>
+            <div class="share">
+                <p><strong>Share:</strong></p>
+                <img (click) = "share('https://telegram.me/share/url?url=', product)"title = "Share by telegram" src = "https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo_icon.png">
+                <img (click) = "share('https://wa.me/123456789?text=', product)" title = "Share by whatsapp" src = "https://logos-download.com/wp-content/uploads/2016/03/Whatsapp-ios7.png">
+            </div>
+            <div>
+                <p><strong>Likes:</strong> {{product.cnt_like}}</p>
+            </div>
+            <hr>
+            <div class = "functions">
+                <i class = "material-icons like" title = "Like" (click) = like(product) *ngIf = "!product.liked">thumb_up_alt</i>
+                <i class = "material-icons liked" title = "Liked" (click) = like(product) *ngIf = "product.liked">thumb_up_alt</i>
+                <i class = "material-icons trash" title= "delete" (click) = "del(product)">delete_forever</i>
+            </div>
+        </div>
+    </div>
+</div>

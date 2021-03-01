@@ -1,0 +1,48 @@
+<div class = "main">
+    <div class="image">
+        <img class = "main-img" [src] = "product.images[product.index_img]">
+        <h4>Images:</h4>
+        <div class = "images">
+            <img *ngFor = "let img_ of product.images; let i = index" class = "sub-images" [src] = "img_" (mouseenter) = "change(i)" >
+        </div>
+    </div>
+    <div class = "info">
+        <h2>{{product.name}}</h2>
+        <hr>
+        <div class = "rating">
+            <h3>Rating:</h3>
+            <div  [title] = "product.rating" *ngFor = "let i of [].constructor(round(product.rating))">
+                <i class = "material-icons">star_rate</i>
+            </div>
+            <div  [title] = "product.rating" *ngFor = "let i of [].constructor(5 - round(product.rating))">
+                <i class = "material-icons">star_border</i>
+            </div>
+        </div>
+        <div class = "price">
+            <h3>Price:</h3>
+            <p class = "main-price">{{product.price}} $</p>
+            <p class = "disc-price">(with discount {{roundPrice(product.price * 0.8)}} $)</p> 
+        </div>
+        <div class="share">
+            <h3>Share:</h3>
+            <img (click) = "share('https://telegram.me/share/url?url=', product)"title = "Share by telegram" src = "https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo_icon.png">
+            <img (click) = "share('https://wa.me/123456789?text=', product)" title = "Share by whatsapp" src = "https://logos-download.com/wp-content/uploads/2016/03/Whatsapp-ios7.png">
+        </div>
+        <div class ="likes">
+            <h3>Likes:</h3>
+            <p>{{product.cnt_like}}</p>
+        </div>
+        <hr>
+        <div class = "functions">
+            <i class = "material-icons like" title = "Like" (click) = like(product) *ngIf = "!product.liked">thumb_up_alt</i>
+            <i class = "material-icons liked" title = "Liked" (click) = like(product) *ngIf = "product.liked">thumb_up_alt</i>
+            <i class = "material-icons trash" title= "delete" (click) = "del(product)">delete_forever</i>
+        </div>
+        <div class = "link">
+            <a [href]="product.link"><h3>Link to Amazon</h3></a>
+        </div>
+        <hr>
+        <h3>Description:</h3>
+        <p>{{product.description}}</p>
+    </div>
+</div>

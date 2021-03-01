@@ -1,18 +1,4 @@
-.main{
-    width: fit-content;
-    background-color: white;
-    margin:100px auto;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-.body{
-    color:#616161;
-    padding: 10px;
-}
-.body h2{
-    font-weight: lighter;
-}
+
 .list{
     margin-bottom: 10px;
     width: 480px;

@@ -1,0 +1,8 @@
+.main{
+    width: fit-content;
+    background-color: white;
+    margin:100px auto;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}

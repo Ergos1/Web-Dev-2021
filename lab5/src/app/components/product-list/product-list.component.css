@@ -1,0 +1,81 @@
+.main{
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+}
+.image{
+    width: fit-content;
+}
+.main-img{
+    width:200px;
+    height: 250px;
+}
+h2{
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(170,170,170,0.5);
+
+    margin-bottom: 50px;
+    padding: 25px;
+}
+p, .more{
+    color:#616161;
+    font-size: 12px;
+    overflow: hidden;
+}
+.more:hover{
+    cursor: pointer;
+}
+.info{
+    width: 500px;
+}
+.name{
+    color: #0F1111;
+    font-weight: 600;
+}
+.rating{
+    display: flex;
+    align-items: center;
+
+    color:yellow;
+}
+.rating p{
+    color:#616161;
+}
+.description{
+    height:12px;
+}
+.share{
+    display: flex;
+    align-items: center;
+}
+.share img{
+    width:20px;
+    margin-left: 10px;
+}
+.share img:hover{
+    cursor: pointer;
+}
+.like{
+    color:gray;
+}
+.liked{
+    color:#5e84f1;
+}
+.like:hover, .trash:hover, .liked:hover{
+    cursor: pointer;
+}
+.functions{
+    display: flex;
+    justify-content: space-around;
+}
+.trash{
+    color:red;
+}
