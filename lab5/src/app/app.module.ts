@@ -18,7 +18,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

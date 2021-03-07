@@ -1,0 +1,27 @@
+<div class = "header">
+    <div class = "log-menu">
+        <img class = "log" (click)="goHome()" src = "../../../assets/images/log.png">
+        <ul class = "list-menu">
+            <li><a routerLink = "/home">Home</a></li>
+            <li><a routerLink = "/about">About</a></li>
+            <li>Language</li>
+            <li>|</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div class = "search">
+        <input type = "text" #inputValue placeholder="Search album by {{getSearchValue()}}">
+        <button (click)="onSearch(inputValue.value)" ><i class = "material-icons">search</i></button>
+        <select class = "select" [(ngModel)] = "selected" (ngModelChange)="onChange($event)">
+            <option value = "1">By id</option>
+            <option value = "2">By name</option>
+        </select>
+    </div>
+    <div class = "sign-reg">
+        <ul class = "list-menu">
+            <li>Sign in</li>
+            <li>|</li>
+            <li>Sign up</li>
+        </ul>
+    </div>
+</div>

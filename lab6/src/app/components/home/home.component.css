@@ -1,0 +1,36 @@
+*{
+    color: white;
+    margin: 0;
+}
+.main-img{
+    width: 550px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.words{
+    width: 550px;
+}
+.words h3{
+    line-height: 30px;
+}
+.words button, .words i{
+    font-size: 30px;
+    color: black;
+}
+.words button:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+.words button{
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+
+    opacity: 50%;
+
+    box-shadow: 0 0 10px rgba(217,217,217,1);
+}

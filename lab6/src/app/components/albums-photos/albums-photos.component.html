@@ -1,0 +1,26 @@
+<div class = "body">
+    <div class = "select-size">
+        <p>Размер:</p>
+        <select class = "select" [(ngModel)] = "selected" (ngModelChange)="onChange($event)">
+            <option >150x150</option>
+            <option >600x600</option>
+        </select>
+    </div>
+    <div class = "images">
+        <div *ngIf = "selected == '150x150'">
+            <div class = "image150" *ngFor = "let photo of photos">
+                <img src="{{photo.thumbnailUrl}}">
+                <p>{{photo.title}}</p>
+            </div>
+        </div>
+        <div *ngIf = "selected == '600x600'">
+            <div class = "image600" *ngFor = "let photo of photos">
+                <img src="{{photo.url}}">
+                <p>{{photo.title}}</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <button class = "but-go-back" (click) = "goBack()">Return back</button>
+</div>

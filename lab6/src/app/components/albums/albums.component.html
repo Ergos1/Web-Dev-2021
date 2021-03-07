@@ -1,0 +1,19 @@
+<div class = "body" *ngIf = "loaded">
+    <h2>Albums</h2>
+    <form [formGroup] = "reactiveForm" (submit) = "onSumbit()">
+        <div>
+            <label for = "title">Title: </label>
+            <input type = "text" id = "title" formControlName = "title">
+            <button type="submit">Create</button>
+        </div>
+    </form>
+    <div  *ngFor = "let album of albums"> 
+    <div class = "list-album" *ngIf = "album.isVisible == true">
+        <span class = "id">{{album.id}}</span>
+        <a class = "title" routerLink= "{{album.id}}">{{album.title}}</a>
+        <button class = "del" (click) = "deleteAlbum(album)"><i class = "material-icons">delete_forever</i></button>
+    </div>
+</div>
+<div *ngIf = "!loaded" style="text-align: center; font-size: 50px;">
+    Loading...
+</div>

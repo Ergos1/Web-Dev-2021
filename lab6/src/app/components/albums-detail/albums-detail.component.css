@@ -1,0 +1,51 @@
+.title{
+    text-align: center;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    width:300px;
+    height:300px;
+}
+p{
+    text-align: center;
+
+    width:300px;
+}
+.buts{
+    margin: 0 auto;
+    width: 200px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.but-more, .but-go-back{
+    background-color: rgb(94, 207, 183);
+    
+    border: 1px solid rgb(94, 207, 183);
+    border-radius: 3px;
+
+    outline: none;
+}
+.but-go-back{
+    background-color: red;
+    border-color: red;
+}
+.but-more:hover, .but-go-back:hover{
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(0,255,255,1);
+}
+.but-go-back:hover{
+    box-shadow: 0 0 25px red;
+}
+.editer{
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    width:200px;
+}
