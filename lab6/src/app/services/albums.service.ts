@@ -9,7 +9,6 @@ import { Observable, of } from 'rxjs';
 })
 export class AlbumsService {
 
-  changedAlbums!:Album[];
 
   readonly url: string = "https://jsonplaceholder.typicode.com/albums";
 
@@ -18,7 +17,7 @@ export class AlbumsService {
   });
 
 
-  constructor(private http: HttpClient) {this.changedAlbums = []}
+  constructor(private http: HttpClient) {}
 
   getAlbums():Observable<Album[]>{
     return this.http.get<Album[]>(this.url);
@@ -34,8 +33,6 @@ export class AlbumsService {
 
   updateAlbum(album:Album):Observable<Album>{
     return this.http.put<Album>(`${this.url}/${album.id}`, album, {headers:this.options});
-    // // this.add2ChangedAlbums(album);
-    // return this.http.put<Album>(`${this.url}/${album.id}`, album);
   }
 
   deleteAlbum(album:Album):Observable<Album>{
@@ -45,21 +42,5 @@ export class AlbumsService {
   addAlbum(album:Album):Observable<Album>{
     return this.http.post<Album>(`${this.url}`, album, {headers:this.options});
   }
-  // checkChange(albums?:Album|Album[]){
-  //   if(albums instanceof Array){
-  //     albums.map(album => {
-  //       if(this.changedAlbums.filter)
-  //     })
-  //   }
-  // }
-
-  // add2ChangedAlbums(album:Album):void{
-  //   let itsNew = true;
-  //   this.changedAlbums.map(x => {
-  //     if(x.id == album.id) {itsNew = false; x = album;}
-  //     return album;
-  //   })
-  //   if(itsNew) this.changedAlbums.push(album);
-  // }
 
 }
