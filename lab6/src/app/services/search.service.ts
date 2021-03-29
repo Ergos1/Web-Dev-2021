@@ -6,12 +6,10 @@ import { Album } from "../../assets/interfaces/album";
 })
 export class SearchService {
 
-  searchPattern:number;
-  searchValue:BehaviorSubject<string>;
+  searchPattern:number = 1;
+  searchValue:BehaviorSubject<string>=new BehaviorSubject<string>("");
 
   constructor() {
-    this.searchPattern = 1;
-    this.searchValue=new BehaviorSubject<string>("");
   }
 
   getAlbumFiltredBySearch(albums:Album[]):Album[]{
