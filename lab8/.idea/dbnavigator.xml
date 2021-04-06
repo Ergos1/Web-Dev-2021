@@ -25,31 +25,30 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806">
-        <schema name="main" object-types="table, view" />
+      <connection connection-id="36bc3dfc-26a2-4358-9280-02b0e346eb8c">
+        <schema name="main" object-types="dataset trigger, constraint, view, column, table, index" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806">
-      <console name="Django-example" type="STANDARD" schema="main" session="Main"><![CDATA[SELECT * FROM auth_user]]></console>
+    <connection id="36bc3dfc-26a2-4358-9280-02b0e346eb8c">
+      <console name="Django" type="STANDARD" schema="main" session="Main"><![CDATA[insert INTO api_product values (2, 'Melon', 1000, 'Taste', 50, True)]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="36bc3dfc-26a2-4358-9280-02b0e346eb8c" object-ref="schemas/main/tables/api_product" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" />
+    <connection id="36bc3dfc-26a2-4358-9280-02b0e346eb8c" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" dataset="main.auth_user" active-filter-id="" />
-    <filter-actions connection-id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" dataset="main.auth_user_user_permissions" active-filter-id="" />
-    <filter-actions connection-id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" dataset="main.core_product" active-filter-id="EMPTY_FILTER">
-      <filter id="2d7fa37a-bd80-427f-ac58-7ee207d1a6b7" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+    <filter-actions connection-id="36bc3dfc-26a2-4358-9280-02b0e346eb8c" dataset="main.api_product" active-filter-id="EMPTY_FILTER">
+      <filter id="bb2b6c62-8785-44ab-8dd3-0f5c8c8a83d6" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
-    <filter-actions connection-id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" dataset="main.django_content_type" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -77,10 +76,10 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="3cf5bbf0-3016-42a5-b89c-17d92f9b0806" active="true">
+      <connection id="36bc3dfc-26a2-4358-9280-02b0e346eb8c" active="true">
         <database>
-          <name value="Django-example" />
-          <description value="Example db.sqlite3" />
+          <name value="Django" />
+          <description value="" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
           <database-version value="3.3" />
@@ -92,7 +91,7 @@
           <port value="1234" />
           <database value="database" />
           <files>
-            <file path="D:\WebDev\lab7\example\db.sqlite3" schema="main" />
+            <file path="D:\WebDev\lab8\shopback\db.sqlite3" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
